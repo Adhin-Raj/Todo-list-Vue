@@ -32,7 +32,6 @@ const update = (index) => {
         const spliced = updated.splice(index, 1)
         const editTask = spliced[0].task
         emit('update', editTask)
-        console.log("hi")
     }
     else {
         toast.add({ severity: 'Error', summary: 'Please add or remove the value in the input...!', life: 3000 });
